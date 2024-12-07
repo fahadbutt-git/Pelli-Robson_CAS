@@ -1,0 +1,63 @@
+%! TEX program = XeLaTeX
+
+\documentclass{article}
+\usepackage{geometry}
+\geometry{
+    paperwidth=64.8cm,
+    paperheight=62.2cm,
+    margin=1in} 
+
+\usepackage{calc}
+\usepackage{eso-pic}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{longtable}
+\usepackage{titlesec}
+\setlength\LTpre{0pt} % space before table
+
+\setmainlanguage{english}
+
+\newfontfamily\optsans{arialb.ttf}[LetterSpace=60]
+\newfontfamily\headerfont{arialb.ttf}[LetterSpace=10]
+
+\pagestyle{empty}
+
+% Define contrast levels
+\newcommand{\contrast}[1]{\textcolor[gray]{#1}} % Grayscale for contrast
+
+% Fixed optotype size
+\newlength{\optotypesize}
+\setlength{\optotypesize}{60pt} % Fixed size for Pelli-Robson
+
+\newcommand{\optotype}[2]{%
+  \resizebox{!}{#1}{\optsans #2}%
+}
+
+% Custom header section
+\newcommand{\chartheader}{
+    \centering
+    \vspace*{-1cm}
+    {\headerfont\Huge PELLI-ROBSON CONTRAST SENSITIVITY CHART}\\[0.5cm]
+    {\headerfont\large Canadian Aborignal Syllabics}\\[0.3cm]
+    \rule{\textwidth}{1pt}\\[0.5cm]
+}
+
+\begin{document}
+
+% Header
+\chartheader
+
+% Tables
+\begin{longtable}{ccc}
+\noalign{\vskip 50pt} \textbf{100 / 0.0 \& 70 / -0.15} & \contrast{0.0}{\optotype{\optotypesize}{AXF}} & \contrast{0.29}{\optotype{\optotypesize}{PPQ}} \\
+\noalign{\vskip 50pt} \textbf{50 / -0.3 \& 35 / -0.45} & \contrast{0.5}{\optotype{\optotypesize}{TBR}} & \contrast{0.65}{\optotype{\optotypesize}{MFD}} \\
+\noalign{\vskip 50pt} \textbf{25 / -0.6 \& 17 / -0.75} & \contrast{0.75}{\optotype{\optotypesize}{UTP}} & \contrast{0.82}{\optotype{\optotypesize}{QSL}} \\
+\noalign{\vskip 50pt} \textbf{12 / -0.9 \& 8 / -1.05} & \contrast{0.87}{\optotype{\optotypesize}{LHA}} & \contrast{0.91}{\optotype{\optotypesize}{KRW}} \\
+\noalign{\vskip 50pt} \textbf{6 / -1.2 \& 4 / -1.35} & \contrast{0.94}{\optotype{\optotypesize}{KQY}} & \contrast{0.96}{\optotype{\optotypesize}{BVV}} \\
+\noalign{\vskip 50pt} \textbf{3 / -1.5 \& 2 / -1.65} & \contrast{0.97}{\optotype{\optotypesize}{HKN}} & \contrast{0.98}{\optotype{\optotypesize}{LZT}} \\
+\noalign{\vskip 50pt} \textbf{1 / -1.8 \& 1 / -1.95} & \contrast{0.98}{\optotype{\optotypesize}{FMQ}} & \contrast{0.99}{\optotype{\optotypesize}{MZT}} \\
+\end{longtable}
+
+\end{document}

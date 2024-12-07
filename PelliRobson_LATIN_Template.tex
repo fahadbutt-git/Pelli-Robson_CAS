@@ -1,0 +1,57 @@
+%! TEX program = XeLaTeX
+
+\documentclass{article}
+\usepackage{geometry}
+\geometry{
+    paperwidth=64.8cm,
+    paperheight=62.2cm,
+    margin=1in} 
+
+\usepackage{calc}
+\usepackage{eso-pic}
+\usepackage{fontspec}
+\usepackage{polyglossia}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{longtable}
+\usepackage{titlesec}
+\setlength\LTpre{0pt} % space before table
+
+\setmainlanguage{english}
+
+\newfontfamily\optsans{arialb.ttf}[LetterSpace=60]
+\newfontfamily\headerfont{arialb.ttf}[LetterSpace=10]
+
+\pagestyle{empty}
+
+% Define contrast levels
+\newcommand{\contrast}[1]{\textcolor[gray]{#1}} % Grayscale for contrast
+
+% Fixed optotype size
+\newlength{\optotypesize}
+\setlength{\optotypesize}{60pt} % Fixed size for Pelli-Robson
+
+\newcommand{\optotype}[2]{%
+  \resizebox{!}{#1}{\optsans #2}%
+}
+
+% Custom header section
+\newcommand{\chartheader}{
+    \centering
+    \vspace*{-1cm}
+    {\headerfont\Huge PELLI-ROBSON CONTRAST SENSITIVITY CHART}\\[0.5cm]
+    {\headerfont\large Canadian Aborignal Syllabics}\\[0.3cm]
+    \rule{\textwidth}{1pt}\\[0.5cm]
+}
+
+\begin{document}
+
+% Header
+\chartheader
+
+% Tables
+\begin{longtable}{ccc}
+% INSERT PYTHON OUTPUT HERE
+\end{longtable}
+
+\end{document}
