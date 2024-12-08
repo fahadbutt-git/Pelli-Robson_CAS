@@ -3,8 +3,8 @@
 \documentclass{article}
 \usepackage{geometry}
 \geometry{
-    paperwidth=59.4cm,
-    paperheight=42cm,
+    paperwidth=59cm,
+    paperheight=84cm,
     margin=1in}
 
 \usepackage{calc}
@@ -29,7 +29,7 @@
 
 % Fixed optotype size
 \newlength{\optotypesize}
-\setlength{\optotypesize}{60pt} % Fixed size for Pelli-Robson
+\setlength{\optotypesize}{4.8cm} % Fixed size for Pelli-Robson
 
 \newcommand{\optotype}[2]{%
   \resizebox{!}{#1}{\optsans #2}%
@@ -50,14 +50,63 @@
 \chartheader
 
 % Tables
-\begin{longtable}{ccc}
-\noalign{\vskip 50pt} \textbf{100 / 0.0 \& 70 / -0.15} & \contrast{0.0}{\optotype{\optotypesize}{ᔨᑎᑭ}} & \contrast{0.29}{\optotype{\optotypesize}{ᑎᒧᔨ}} \\
-\noalign{\vskip 50pt} \textbf{50 / -0.3 \& 35 / -0.45} & \contrast{0.5}{\optotype{\optotypesize}{ᐱᑎᒋ}} & \contrast{0.65}{\optotype{\optotypesize}{ᑯᑯᐱ}} \\
-\noalign{\vskip 50pt} \textbf{25 / -0.6 \& 17 / -0.75} & \contrast{0.75}{\optotype{\optotypesize}{ᑎᐱᐱ}} & \contrast{0.82}{\optotype{\optotypesize}{ᔨᑎᒧ}} \\
-\noalign{\vskip 50pt} \textbf{12 / -0.9 \& 8 / -1.05} & \contrast{0.87}{\optotype{\optotypesize}{ᑎᑭᐱ}} & \contrast{0.91}{\optotype{\optotypesize}{ᔨᐱᒋ}} \\
-\noalign{\vskip 50pt} \textbf{6 / -1.2 \& 4 / -1.35} & \contrast{0.94}{\optotype{\optotypesize}{ᔨᒧᐱ}} & \contrast{0.96}{\optotype{\optotypesize}{ᑎᒥᑭ}} \\
-\noalign{\vskip 50pt} \textbf{3 / -1.5 \& 2 / -1.65} & \contrast{0.97}{\optotype{\optotypesize}{ᐱᒋᑯ}} & \contrast{0.98}{\optotype{\optotypesize}{ᑭᒥᒋ}} \\
-\noalign{\vskip 50pt} \textbf{1 / -1.8 \& 1 / -1.95} & \contrast{0.98}{\optotype{\optotypesize}{ᑎᑎᒥ}} & \contrast{0.99}{\optotype{\optotypesize}{ᒋᐱᐱ}} \\
-\end{longtable}
+\begin{tabular}{c c c c c}
+\noalign{\vskip 50pt} % Add vertical spacing
+        \textbf{\LARGE 0.05} & 
+        \contrast{0.0}{\optotype{\optotypesize}{ᑯᑭᐱ}} & 
+        \hspace{3cm} & 
+        \contrast{0.24}{\optotype{\optotypesize}{ᔨᑎᒋ}} & 
+        \textbf{\LARGE 0.20} \\
+        
+        \noalign{\vskip 50pt} % Add vertical spacing
+        \textbf{\LARGE 0.35} & 
+        \contrast{0.42}{\optotype{\optotypesize}{ᑎᐱᒋ}} & 
+        \hspace{3cm} & 
+        \contrast{0.56}{\optotype{\optotypesize}{ᔨᑯᒥ}} & 
+        \textbf{\LARGE 0.50} \\
+
+        \noalign{\vskip 50pt} % Add vertical spacing
+        \textbf{\LARGE 0.65} & 
+        \contrast{0.67}{\optotype{\optotypesize}{ᔨᔨᑭ}} & 
+        \hspace{3cm} & 
+        \contrast{0.75}{\optotype{\optotypesize}{ᑯᒥᒧ}} & 
+        \textbf{\LARGE 0.80} \\
+        
+        \noalign{\vskip 50pt} % Add vertical spacing
+        \textbf{\LARGE 0.95} & 
+        \contrast{0.81}{\optotype{\optotypesize}{ᔨᑎᐱ}} & 
+        \hspace{3cm} & 
+        \contrast{0.86}{\optotype{\optotypesize}{ᒥᑭᑯ}} & 
+        \textbf{\LARGE 1.10} \\
+        
+        \noalign{\vskip 50pt} % Add vertical spacing
+        \textbf{\LARGE 1.25} & 
+        \contrast{0.89}{\optotype{\optotypesize}{ᒧᐱᑎ}} & 
+        \hspace{3cm} & 
+        \contrast{0.92}{\optotype{\optotypesize}{ᑯᔨᒋ}} & 
+        \textbf{\LARGE 1.40} \\
+
+        \noalign{\vskip 50pt} % Add vertical spacing
+        \textbf{\LARGE 1.55} & 
+        \contrast{0.94}{\optotype{\optotypesize}{ᒥᑯᒋ}} & 
+        \hspace{3cm} & 
+        \contrast{0.95}{\optotype{\optotypesize}{ᔨᒧᑭ}} & 
+        \textbf{\LARGE 1.70} \\
+        
+        \noalign{\vskip 50pt} % Add vertical spacing
+        \textbf{\LARGE 1.85} & 
+        \contrast{0.96}{\optotype{\optotypesize}{ᒥᔨᑭ}} & 
+        \hspace{3cm} & 
+        \contrast{0.97}{\optotype{\optotypesize}{ᐱᒋᒧ}} & 
+        \textbf{\LARGE 2.00} \\
+
+        \noalign{\vskip 50pt} % Add vertical spacing
+        \textbf{\LARGE 2.15} & 
+        \contrast{0.98}{\optotype{\optotypesize}{ᑯᒧᐱ}} & 
+        \hspace{3cm} & 
+        \contrast{0.98}{\optotype{\optotypesize}{ᒋᑭᔨ}} & 
+        \textbf{\LARGE 2.30} \\
+\end{tabular}
+
 
 \end{document}
