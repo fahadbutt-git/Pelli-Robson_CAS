@@ -3,6 +3,12 @@
 
 This repository contains Python scripts and LaTeX templates for generating Pelli-Robson contrast sensitivity charts, in both Latin characters and Canadian Aboriginal Syllabics (CAS). These charts can be used for testing contrast sensitivity in a standardized manner and are adaptable for various testing scenarios.
 
+## **Generated Chart Example**
+
+Here is an example of a **Pelli-Robson Contrast Sensitivity Chart** generated using this repository:
+
+![Generated Pelli-Robson Chart](PelliRobson_CAS.png)
+
 ## **Repository Structure**
 
 ```plaintext
