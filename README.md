@@ -64,7 +64,7 @@ Here is an example of a **Pelli-Robson Contrast Sensitivity Chart** generated us
 The Pelli-Robson chart is designed to test **contrast sensitivity** by progressively reducing the contrast of letters across rows.
 
 ### **Latin Version**
-- **Letters**: The standard chart uses **Latin characters** (e.g., A-Z).
+- **Letters**: The standard chart uses **Latin characters** (SLOAN).
 - **Layout**: Letters are grouped in triplets, with contrast decreasing by 0.15 log units per triplet.
 - **Contrast Levels**: Begins at **100% contrast** and reduces logarithmically.
 
