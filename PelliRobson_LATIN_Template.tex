@@ -3,8 +3,8 @@
 \documentclass{article}
 \usepackage{geometry}
 \geometry{
-    paperwidth=59.4cm,
-    paperheight=42cm,
+    paperwidth=59cm,
+    paperheight=84cm,
     margin=1in}
 
 \usepackage{calc}
@@ -29,7 +29,7 @@
 
 % Fixed optotype size
 \newlength{\optotypesize}
-\setlength{\optotypesize}{60pt} % Fixed size for Pelli-Robson
+\setlength{\optotypesize}{4.8cm} % Fixed size for Pelli-Robson
 
 \newcommand{\optotype}[2]{%
   \resizebox{!}{#1}{\optsans #2}%
@@ -50,8 +50,9 @@
 \chartheader
 
 % Tables
-\begin{longtable}{ccc}
+\begin{tabular}{c c c c c}
 % INSERT PYTHON OUTPUT HERE
-\end{longtable}
+\end{tabular}
+
 
 \end{document}
