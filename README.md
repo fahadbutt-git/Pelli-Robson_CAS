@@ -14,14 +14,17 @@ Here is an example of a **Pelli-Robson Contrast Sensitivity Chart** generated us
 ```plaintext
 ├── AboriginalSerifBOLD.ttf           # Font file for CAS charts
 ├── arialb.ttf                        # Font file for Latin charts
-├── PelliRobson_CAS.pdf               # Example PDF for CAS chart
+├── Instructions.docx                 # Detailed measurement and testing protocol
+├── PelliRobson_CAS.pdf               # Example PDF of the CAS chart
+├── PelliRobson_LATIN.pdf             # Example PDF of the Latin chart
 ├── PelliRobson_CAS_Template.tex      # LaTeX template for CAS charts
 ├── PelliRobson_CAS_Example.tex       # Example LaTeX file for CAS charts
 ├── PelliRobson_LATIN_Template.tex    # LaTeX template for Latin charts
 ├── PelliRobson_LATIN_Example.tex     # Example LaTeX file for Latin charts
-├── README.md                         # Project documentation
-├── pellirobson_cas.py                # Python script to generate CAS TeX content
-├── pellirobson_latin.py              # Python script to generate Latin TeX content
+├── PelliRobson_CAS.png               # Image preview of the CAS chart
+├── README.md                         # Project documentation and usage instructions
+├── pellirobson_cas.py                # Python script to generate CAS LaTeX content
+├── pellirobson_latin.py              # Python script to generate Latin LaTeX content
 ```
 
 
